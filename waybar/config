@@ -1,0 +1,193 @@
+// -*- mode: json -*-
+
+{
+	"layer": "bottom",
+	"position": "top",
+
+	"modules-left": [
+		"sway/workspaces",
+		"custom/right-arrow-dark"
+	],
+	"modules-center": [
+		"custom/left-arrow-blue",
+		"clock#1",
+		"custom/left-arrow-blue-light",
+		"custom/left-arrow-white",
+		"clock#2",
+		"custom/right-arrow-white",
+		"custom/right-arrow-pink-light",
+		"clock#3",
+		"custom/right-arrow-pink"
+	],
+	"modules-right": [
+		//"custom/left-arrow-blue-light",
+		"custom/left-arrow-blue",
+		"pulseaudio",
+		"custom/left-arrow-blue-light",
+		"custom/left-arrow-pink",
+		"memory",
+		"custom/left-arrow-pink-light",
+		"custom/left-arrow-white",
+		"cpu",
+		"custom/left-arrow-white-light",
+		"custom/left-arrow-pink",
+		"battery",
+		"custom/left-arrow-pink-light", // If you have a second battery, comment
+		"custom/left-arrow-blue",  // these lines and uncomment the 3 below
+		//"battery#bat1",		   // Also, uncomment the actual widget down below
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		"temperature",
+		"custom/left-arrow-blue-light",
+		"custom/left-arrow-dark",
+		"tray"
+	],
+
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/left-arrow-blue": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-pink": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-blue": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-pink": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-white": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-white": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-white-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-white-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-pink-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-blue-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-blue-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-pink-light": {
+		"format": "",
+		"tooltip": false
+	},
+
+
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%I:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%m-%d}",
+		"tooltip": false
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume:2}%",
+		"format-bluetooth": " {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol"
+	},
+	"memory": {
+		"interval": 5,
+		"format": "Mem {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "CPU {usage:2}%"
+	},
+	"battery": {
+		"bat": "BAT0",
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	//"battery#bat1": {
+	//	"bat": "BAT1",
+	//	"states": {
+	//		"good": 95,
+	//		"warning": 30,
+	//		"critical": 15
+	//	},
+	//	"format": "{icon} {capacity}%",
+	//	"format-icons": [
+	//		"",
+	//		"",
+	//		"",
+	//		"",
+	//		""
+	//	]
+	//},
+	"temperature": {
+		"format": " {temperatureC}°C",
+	},
+	"tray": {
+		"icon-size": 20,
+		"interval": 5
+	}
+}

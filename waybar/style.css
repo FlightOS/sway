@@ -1,0 +1,125 @@
+* {
+	font-size: 20px;
+	font-family: monospace;
+}
+
+window#waybar {
+	background: #292b2e;
+	color: #fdf6e3;
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+	color: #1a1a1a;
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+	color: #292b2e;
+	background: #1a1a1a;
+}
+
+#custom-right-arrow-pink-light,
+#custom-left-arrow-pink-light {
+	color: #292b2e;
+	background: #F7A8B8;
+}
+
+#custom-right-arrow-white-light,
+#custom-left-arrow-white-light {
+	color: #292b2e;
+	background: #FFFFFF;
+}
+
+#custom-right-arrow-blue-light,
+#custom-left-arrow-blue-light {
+	color: #292b2e;
+	background: #55CDFC;
+}
+
+#custom-right-arrow-white,
+#custom-left-arrow-white {
+	color: #FFFFFF;
+}
+
+#custom-right-arrow-pink,
+#custom-left-arrow-pink {
+	color: #F7A8B8;
+}
+#custom-right-arrow-blue,
+#custom-left-arrow-blue {
+	color: #55CDFC;
+}
+
+#temperature,
+#pulseaudio {
+	background: #55CDFC;
+	color: #000000;
+}
+
+#memory,
+#battery,
+#battery#bat1 {
+	background: #F7A8B8;
+	color: #000000;
+}
+
+#cpu {
+	background: #ffffff;
+	color: #000000;
+}
+
+#workspaces,
+#tray {
+	background: #1a1a1a;
+}
+
+#workspaces button {
+	padding: 0 2px;
+	color: #fdf6e3;
+}
+#workspaces button.focused {
+	color: #268bd2;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #1a1a1a;
+	border: #1a1a1a;
+	padding: 0 3px;
+}
+
+
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#battery#bat1,
+#temperature,
+#keyboard-state,
+#keyboard-state#num {
+	padding: 0 10px;
+}
+
+/* 
+Yes, this section is probably
+lighting up brighter than a
+fireworks show in your IDE,
+but that's OK because Waybar
+doesn't care.
+*/
+
+#clock.1{
+	background: #55CDFC;
+	color: #000000;
+}
+#clock.2{
+	color: #000000;
+	background: #ffffff;
+}
+#clock.3{
+	background: #F7A8B8;
+	color: #000000
+}
